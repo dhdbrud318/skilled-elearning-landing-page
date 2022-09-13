@@ -1,6 +1,6 @@
 # Frontend Mentor - Skilled e-learning landing page
 
-![Design preview for the Skilled e-learning landing page coding challenge](/preview/preview-video.mp4)
+![Design preview for the Skilled e-learning landing page coding challenge](/preview/desktop-design.png)
 
 ## Welcome! 👋
 

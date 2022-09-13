@@ -1,6 +1,6 @@
 # Frontend Mentor - Skilled e-learning landing page
 
-![Design preview for the Skilled e-learning landing page coding challenge](./preview/preview-video.mp4)
+![Design preview for the Skilled e-learning landing page coding challenge](/preview/preview-video.mp4)
 
 ## Welcome! 👋
 
@@ -14,4 +14,4 @@ This challenge is to build out this landing page and get it looking as close to 
 
 Yoo Keoung(Kate) Oh
 
-@instagram: [yookeoungoh](https://www.instagram.com/yookeoungoh/)
+@instagram: [@yookeoungoh](https://www.instagram.com/yookeoungoh/)

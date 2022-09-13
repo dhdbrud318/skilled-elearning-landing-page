@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Skilled e-learning landing page</title>
+
+    <!-- Custom stylesheet link -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header id="header">
+      <div class="container">
+        <img class="logo" src="assets/logo-dark.svg" alt="Logo" />
+        <nav>
+          <button class="get-started header-btn">Get Started</button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- hero section -->
+    <section class="hero">
+      <div class="container flex">
+        <div class="hero-content">
+          <h1>Maximize skill, minimize budget</h1>
+          <p>
+            Our modern courses across a range of in-demand skills will give you
+            the knowledge you need to live the life you want.
+          </p>
+          <button class="get-started">Get Started</button>
+        </div>
+        <picture class="hero-img">
+          <source
+            media="(max-width: 640px)"
+            srcset="./assets/image-hero-mobile.png"
+          />
+          <source
+            media="(max-width: 1200px)"
+            srcset="./assets/image-hero-tablet.png"
+          />
+          <img src="./assets/image-hero-desktop.png" alt="Hero Image" />
+        </picture>
+      </div>
+    </section>
+
+    <!-- Main Grid -->
+    <main class="grid-bg">
+      <div class="container grid">
+        <div class="box">
+          <h2>Check out our most popular courses!</h2>
+        </div>
+        <div class="box">
+          <img
+            src="assets/icon-animation.svg"
+            alt="Animation Icon"
+            class="box-icon"
+          />
+          <h3 class="box-title">Animation</h3>
+          <p class="box-content">
+            Learn the latest animation techniques to create stunning motion
+            design and captivate your audience.
+          </p>
+          <a href="#" class="box-btn"> Get Started </a>
+        </div>
+        <div class="box">
+          <img
+            src="assets/icon-design.svg"
+            alt="Design Icon"
+            class="box-icon"
+          />
+          <h3 class="box-title">Design</h3>
+          <p class="box-title">
+            Create beautiful, usable interfaces to help shape the future of how
+            the web looks.
+          </p>
+          <a href="#" class="box-btn"> Get Started </a>
+        </div>
+        <div class="box">
+          <img
+            src="assets/icon-photography.svg"
+            alt="Animation Icon"
+            class="box-icon"
+          />
+          <h3 class="box-title">Photography</h3>
+          <p class="box-content">
+            Explore critical fundamentals like lighting, composition, and focus
+            to capture exceptional photos.
+          </p>
+          <a href="#" class="box-btn"> Get Started </a>
+        </div>
+        <div class="box">
+          <img
+            src="assets/icon-crypto.svg"
+            alt="Animation Icon"
+            class="box-icon"
+          />
+          <h3 class="box-title">Crypto</h3>
+          <p class="box-content">
+            All you need to know to get started investing in crypto. Go from
+            beginner to advanced with this 54 hour course.
+          </p>
+          <a href="#" class="box-btn"> Get Started </a>
+        </div>
+        <div class="box">
+          <img
+            src="assets/icon-business.svg"
+            alt="Animation Icon"
+            class="box-icon"
+          />
+          <h3 class="box-title">Business</h3>
+          <p class="box-content">
+            A step-by-step playbook to help you start, scale, and sustain your
+            business without outside investment.
+          </p>
+          <a href="#" class="box-btn"> Get Started </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <img class="logo" src="assets/logo-light.svg" alt="Footer Logo" />
+        <button class="get-started footer-btn">Get Started</button>
+      </div>
+    </footer>
+
+    <!-- Change Header Color When Scrolling -->
+    <script>
+      $(document).on("scroll", function () {
+        if ($(window).scrollTop() > 30) {
+          $("#header").addClass("header-active");
+        } else {
+          $("#header").removeClass("header-active");
+        }
+      });
+    </script>
+  </body>
+</html>

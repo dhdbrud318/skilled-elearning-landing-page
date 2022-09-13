@@ -1,0 +1,270 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --nav-btn-hover: rgb(102, 108, 163);
+  --dark-clr: rgb(19, 24, 63);
+  --p-clr: rgb(131, 134, 154);
+  --box-btn: rgb(247, 71, 128);
+  --box-btn-hover: rgb(255, 167, 195);
+  --box-shadow: rgba(6, 22, 1, 0.144);
+  --grid-bg: linear-gradient(white 20%, rgb(240, 241, 255) 80%);
+  --btn-clr: linear-gradient(rgb(255, 111, 72), rgb(240, 42, 166));
+  --ft-btn-clr: linear-gradient(rgb(72, 81, 255), rgb(240, 42, 166));
+}
+
+/* Elememnt styling */
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.125rem;
+  min-width: 300px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 3.75rem;
+  margin-bottom: 1.75rem;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.75rem;
+}
+
+p {
+  line-height: 1.75rem;
+  color: var(--p-clr);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Set a margin for the entire body */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 69.375rem;
+}
+
+/* Default Style for Buttons */
+.get-started {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border: none;
+  padding: 0.75rem 1.75rem;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  color: white;
+  cursor: pointer;
+}
+
+/* Header */
+.get-started:hover {
+  opacity: 0.8;
+}
+
+.logo {
+  width: 89px;
+  object-fit: contain;
+}
+
+header {
+  padding: 1.5rem 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background-color: transparent;
+  transition: background-color ease-in-out 0.2s, box-shadow ease-in-out 0.2s;
+  flex-shrink: 0;
+}
+
+.header-active {
+  background-color: #fff;
+  box-shadow: 0 1.125rem 1rem -1.25rem var(--box-shadow);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-btn {
+  background-color: var(--dark-clr);
+}
+
+.header-btn:hover {
+  background-color: var(--nav-btn-hover);
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 10rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 8rem;
+}
+
+.hero-content {
+  flex-basis: 45%;
+}
+
+.hero-content p {
+  width: 90%;
+  margin-bottom: 2.5rem;
+}
+
+.hero-content button {
+  background: var(--box-btn);
+}
+
+.hero-img {
+  position: absolute;
+  left: 52.5%;
+  top: -17.5%;
+  bottom: 0;
+  max-width: 840px;
+  min-width: 720px;
+}
+
+/* Main */
+.grid-bg {
+  background: var(--grid-bg);
+}
+
+.grid {
+  padding-bottom: 5rem;
+  gap: 5rem 1.875rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+/* Box Styling */
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4.25rem 2.25rem 2.25rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0.2rem 0.2rem 1rem 0.1rem var(--box-shadow);
+  position: relative;
+}
+
+.box-icon {
+  width: 3.5rem;
+  object-fit: contain;
+  position: absolute;
+  top: -7%;
+}
+
+.box-btn {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--box-btn);
+  transition: color 0.15s;
+}
+
+.box-btn:hover {
+  color: var(--box-btn-hover);
+}
+
+.box:nth-of-type(1) {
+  background: var(--btn-clr);
+  color: white;
+}
+
+.box *:not(a) {
+  margin-bottom: 1.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-clr);
+  padding: 2rem 0;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-btn {
+  background: var(--ft-btn-clr);
+}
+
+@media (max-width: 1080px) {
+  .container {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  .hero-content p {
+    width: 100%;
+  }
+
+  .hero-img {
+    left: 42.5%;
+    top: -12.5%;
+  }
+
+  .grid {
+    padding-bottom: 5rem;
+    gap: 2.5rem 0.875rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding-bottom: 1rem;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .hero-img {
+    position: static;
+    margin-top: 1rem;
+    min-width: auto;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, minmax(min-content, max-content));
+  }
+}
